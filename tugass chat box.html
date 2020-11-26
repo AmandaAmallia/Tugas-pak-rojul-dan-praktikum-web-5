@@ -1,0 +1,22 @@
+<!DOCTYPE html><html
+><head>	<title>Chat</title>
+</head>
+<body>
+    <body style="background-color:grey"></body>"
+
+    <H1 style="text-align:center">Silahkan Curhat Gaiss </H1>
+    <div style="width: 100%; stroke: rgb(28, 29, 27);" id="isichat">			
+    </div
+    >	<form method="REQUEST" onsubmit="return kirim();">		
+        <input id="pesan" style="width: 50%" type="text" name="pesan">		
+        <button type="submit" onclick="return kirim();">KIRIM PESAN</button>	
+    </form>	
+</body>
+    <script type="text/javascript">	
+            function kirim() {	
+            let pesan = document.getElementById("pesan").value;		
+            document.getElementById("isichat").innerHTML += pesan+"<br/>";		
+            document.getElementById("pesan").value = "";		
+            return false;	}
+    </script>
+</html>

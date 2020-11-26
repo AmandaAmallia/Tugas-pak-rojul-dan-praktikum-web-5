@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>	
+        <body style="background-color:rosybrown"></body>"
+        <title>IMAGE PICKER</title></head>
+        <body style="margin: 100px"> 	<center>	<h1 style="color:lightgreen">Masa Kecil Anda Bahagia </h1>
+        <body style="margin: 100px"> 	<center>	<h1 Style="color:deepskyblue">Silahkan Pilih Kartun </h1>
+
+            <select onchange="gantigambar();" id="listgambar">			
+                <option value="">PILIH KARTUN</option>			
+                <option value="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1590455428/go4c2dvipmmt0b93gdxi.png">TOM&JERRY</option>			
+                <option value="https://cdn.idntimes.com/content-images/community/2019/10/1-22919da5e3cc7dad744bd88df751261b_600x400.jpg">SPONGEBOB</option>			
+                <option value="https://cdn1-production-images-kly.akamaized.net/N23ta1-Atq3-6Vt0S5QyW3r0NHk=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1011901/original/087911400_1444124818-Dora-The-Explorer-Full.jpg">DORA</option>			
+                <option value="https://www.hariansuara.com/files/posts/12538/5823-puzzle-mickey-mouse-club-house-100-piezas_1920x1080.0.0.jpg">MICKEY MOUSE</option>	
+                <option value="https://cdn-2.tstatic.net/style/foto/bank/images/nija-hattori_20170801_163445.jpg">NINJA HATTORI</option>
+                <option value="https://castzbordz.files.wordpress.com/2012/02/wallpaper-kartun-looney-tunes.jpg">LOONEY TUNES</option>	
+                <option value="https://1.bp.blogspot.com/-NwJsi3IXAME/Xy6dvcLeklI/AAAAAAAAqH4/umHOUXYpYZQvzMS0_zJ0G8KKVHKXMDsyACLcBGAsYHQ/s1600/chalk%2Bzone.jpg">CHALK ZONE</option>
+                <option value="https://cdn.idntimes.com/content-images/community/2019/12/casper2-5c9853857854f94cc9d0c20441fba19d_600x400.jpg">CASPER</option>
+                <option value="https://thesavvyscreener.com/wp-content/uploads/2018/12/Popeye-2.png">POPEYE</option>	
+                <option value="https://static.next-episode.net/tv-shows-images/huge/woody-woodpecker-2018.jpg">WOODY WOODPECKER</option>
+            </select>	</center>		
+            <br/>	
+            <img src="" style="width: 600px" id="gambar">
+         </body>
+         <script type="text/javascript">	
+         function gantigambar()
+          {		
+              let gambar = document.getElementById("listgambar").value;		
+              document.getElementById("gambar").src = gambar;		
+              alert("Ini Gambar " + gambar);	  
+            }
+        </script>
+</html>
